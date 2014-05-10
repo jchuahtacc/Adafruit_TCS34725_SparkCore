@@ -1,6 +1,6 @@
 <html>
 <body>
-    <span id="uptime"></span><br>
+    <span id="coreinfo"></span><br>
     <span id="tstamp"></span><br><br>
 	<div id="clr" style="width:200px;height=100px"></div>
 
@@ -10,7 +10,7 @@
     <script type="text/javascript">
     function start() {
 
-        document.getElementById("uptime").innerHTML = "Waiting for data...";
+        document.getElementById("coreinfo").innerHTML = "Waiting for data...";
         var deviceID = "<<deviceid>>";
         var accessToken = "<<access token>>";
         var eventSource = new EventSource("https://api.spark.io/v1/devices/" + deviceID + "/events/?access_token=" + accessToken);
@@ -23,7 +23,7 @@
 
         eventSource.addEventListener('colorinfo', function(e) {
             var parsedData = JSON.parse(e.data);
-            var tempSpan = document.getElementById("uptime");
+            var tempSpan = document.getElementById("coreinfo");
             var tsSpan   = document.getElementById("tstamp");
 			var clr = document.getElementById("clr");
 			
