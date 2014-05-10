@@ -10,7 +10,7 @@ This is a simple port of Adafruit TCS34725 library for Spark Core.
  4. TCS34725 SDA to D0 (with pullup resistor)
 
 ###Sample Application###
-The sample application is based on the [Adafruit Tutorial of TCS34725][2]. The application reads the RGB Color from the sensor and publish and event with name ***colorinfo***.
+The sample application is based on the [Adafruit Tutorial of TCS34725][2]. The application reads the RGB Color from the sensor and publish an event with name ***colorinfo***.
 
 ###Web Page###
 I took [@bko][3]'s HTML page and modified it to include the RGB color.
