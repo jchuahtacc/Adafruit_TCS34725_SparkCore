@@ -1,24 +1,23 @@
-Simple port of [Adafruit TCS34725][1] for Spark Core.
-------------------------------------------------
-----------
-This is a simple port of Adafruit TCS34725 library for Spark Core.
+#Adafruit TCS34725 Color Sensor Driver #
 
-###Connection###
- 1. TCS34725 Vin/3V3 of TCS34725 5/3.3
- 2. TCS34725 GND to GND 
- 3. TCS34725 SCL to D1 (with pullup resistor)
- 4. TCS34725 SDA to D0 (with pullup resistor)
+*** Adapted by Krishnaraj Varma for Spark Core ***
 
-###Sample Application###
-The sample application is based on the [Adafruit Tutorial of TCS34725][2]. The application reads the RGB Color from the sensor and publish an event with name ***colorinfo***.
+This driver is for the Adafruit TCS34725 Breakout.
+    ------> http://www.adafruit.com/products/1334
 
-###Web Page###
-I took [@bko][3]'s HTML page and modified it to include the RGB color.
+## About this Driver ##
 
-###How to run the application###
-Load the sample application into the Spark Core. Open the Web Page in an editor and replace the tokens *deviceid* and *access token* with actual values. Open the web page in a browser and press ***Connect*** Button.
+These modules use I2C to communicate, 2 pins are required to  
+interface
 
+Adafruit invests time and resources providing this open source code, 
+please support Adafruit and open-source hardware by purchasing 
+products from Adafruit!
 
-  [1]: http://www.adafruit.com/products/1334
-  [2]: https://learn.adafruit.com/adafruit-color-sensors/overview
-  [3]: https://community.spark.io/t/tutorial-getting-started-with-spark-publish/3422
+Written by Kevin (KTOWN) Townsend for Adafruit Industries.
+BSD license, check license.txt for more information
+All text above must be included in any redistribution
+
+To download. click the ZIP button in the top bar, and check this tutorial
+for instructions on how to install: 
+http://learn.adafruit.com/adafruit-all-about-arduino-libraries-install-use

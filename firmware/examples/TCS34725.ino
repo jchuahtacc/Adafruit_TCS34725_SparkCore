@@ -1,5 +1,5 @@
 // This #include statement was automatically added by the Spark IDE.
-#include "Adafruit_TCS34725.h"
+#include "Adafruit_TCS34725/Adafruit_TCS34725.h"
 #include <math.h>
 
 boolean commonAnode = false;
